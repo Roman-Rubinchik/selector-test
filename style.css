@@ -1,0 +1,48 @@
+.container {
+    padding: 20px;
+    border: 1px solid;
+    margin-bottom: 20px;
+}
+
+.container1 > ul > li {
+    color: red;
+}
+
+.container2 p + span {
+    color: red;
+}
+
+.container3 span:nth-child(even) {
+    color: rgb(241, 245, 3);
+}
+
+.container4 span:nth-child(4n-1) {
+    color: rgb(247, 14, 247);
+}
+
+.container5 span:nth-last-child(3) {
+    color: red;
+}
+
+.container6 span:nth-last-child(-n+3), .container6 span:nth-child(-n+3) {
+    color: red;
+}
+
+.container7 button:first-child {
+    color: red;
+}
+
+.container7 button:last-child {
+    color: red;
+}
+/*не работает first-child*/
+
+
+
+.container8 div:not(.no-color) {
+    color: red;
+}
+
+.container9 div[color*=red] {
+    color: red;
+}
